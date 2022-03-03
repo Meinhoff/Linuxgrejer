@@ -5,4 +5,15 @@ mkdir $HOME/.config/rofi
 mkdir $HOME/.config/rofi/themes
 cp config.rasi $HOME/.config/rofi
 cp fancy.rasi $HOME/.config/rofi/themes
+mkdir $HOME/.config/i3blocks
+mkdir $HOME/.config/i3blocks/scripts
+cp cpu_usage disk memory shutdown_menu volume wifi $HOME/.config/i3blocks/scripts/
+cp i3blocksconfig $HOME/.config/i3blocks
+mv $HOME/.config/i3blocks/i3blocksconfig $HOME/.config/i3blocks/config
+chmod +x $HOME/.config/i3blocks/scripts/*
+echo "exec zsh" >> $HOME/.bash
+cp zshrc $HOME/.zshrc
+cd
+rm -rf Linuxgrejer
+sudo reboot now
 
