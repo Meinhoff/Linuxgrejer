@@ -1,0 +1,96 @@
+#Restarta i3
+#[restart]
+#align=left
+#color=#ffcc00
+#full_text= 🌀
+#command=i3-msg -q restart
+
+#Volume
+[volume]
+color=#ffcc00
+command=$HOME/.config/i3blocks/scripts/volume
+#LABEL=♪ 
+LABEL= 🔊
+#LABEL=VOL 
+interval=once
+signal=10
+
+#Publik IP
+#[public-ip]
+#DEFAULT_COLOR="#aaafff"
+#command=wget -qO - icanhazip.com
+#interval=once
+
+#MIXER
+[pavucontrol]
+color=#B79200
+full_text= 🎧
+command=i3-msg -q exec pavucontrol $button
+
+#BRAVE
+#[startbravebrowser]
+#color=#ffcc00
+#full_text= 
+#command=i3-msg -q exec brave https://www.google.com $button
+
+#Signal
+[signal-desktop]
+color=#ffcc00
+full_text= 💬
+command=i3-msg -q exec signal-desktop $button
+
+#Nemo filhanterare
+[disk]
+color=#ffcc00
+command=i3-msg -q exec nemo
+full_text= 📂
+
+#CPU
+[cpu_usage]
+#color=#ffcc00
+command=$HOME/.config/i3blocks/scripts/cpu_usage
+interval=10
+LABEL= 💻
+#min_width=CPU: 100.00%
+#T_WARN=50
+#T_CRIT=80
+#DECIMALS=2
+COLOR_NORMAL=#ffcc00
+COLOR_WARN=#3d85c6
+COLOR_CRIT=#FF0000
+
+#Memory
+[memory]
+color=#ffcc00
+command=$HOME/.config/i3blocks/scripts/memory
+label= 🤔
+interval=30
+
+#WIFI
+[wifi]
+color=#ffcc00
+command=$HOME/.config/i3blocks/scripts/wifi
+label= 📡 
+INTERFACE=wlp5s0
+interval=240
+COLOR_GE80=#00FF00
+COLOR_GE60=#FFF600
+COLOR_GE40=#FFAE00
+COLOR_LOWR=#FF0000
+COLOR_DOWN=#FF0000
+
+#Klockan
+[time]
+color=#ffcc00
+label= ⏰
+instance=la
+TZ=Europe/Stockholm
+command=date +%T
+interval=1
+
+#Shutdown-menyn (Rofi)
+[shutdown_menu]
+color=#ffcc00
+full_text= ⚡
+command=$HOME/.config/i3blocks/scripts/shutdown_menu
+
