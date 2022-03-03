@@ -14,7 +14,7 @@ chmod +x $HOME/.config/i3blocks/scripts/*
 echo "exec zsh" >> $HOME/.bash
 cp zshrc $HOME/.zshrc
 mkdir $HOME/Wallpapers
-cp Bergvatten.jpg mkdir $HOME/Wallpapers
+cp Bergvatten.jpg $HOME/Wallpapers
 nitrogen --set-zoom-fill $HOME/Wallpapers/Bergvatten.jpg
 cd
 rm -rf Linuxgrejer
