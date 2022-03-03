@@ -16,5 +16,6 @@ mkdir $HOME/Wallpapers
 cp mount1.jpg $HOME/Wallpapers
 nitrogen --set-zoom-fill $HOME/Wallpapers/mount1.jpg
 rm -rf Linuxgrejer
-echo "Klaaaaart! Starta om data-apparaturen utifall...."
+echo "neofetch" >> $HOME/.bashrc
+echo "Klaaaaart! Starta om data-apparaturen!"
 
