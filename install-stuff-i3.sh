@@ -8,7 +8,8 @@ cp fancy.rasi $HOME/.config/rofi/themes
 mkdir $HOME/.config/i3blocks
 mkdir $HOME/.config/i3blocks/scripts
 cp cpu_usage disk memory shutdown_menu volume wifi $HOME/.config/i3blocks/scripts/
-cp i3blocksconfig $HOME/.config/i3blocks
+cp i3blocksconfig $HOME/.config/i3blocks/
+cp config $HOME/.config/i3/
 mv $HOME/.config/i3blocks/i3blocksconfig $HOME/.config/i3blocks/config
 chmod +x $HOME/.config/i3blocks/scripts/*
 echo "exec zsh" >> $HOME/.bash
@@ -16,7 +17,6 @@ cp zshrc $HOME/.zshrc
 mkdir $HOME/Wallpapers
 cp mount1.jpg $HOME/Wallpapers
 nitrogen --set-zoom-fill $HOME/Wallpapers/mount1.jpg
-cd
 rm -rf Linuxgrejer
-sudo reboot now
+echo "Klaaaaart"!
 
