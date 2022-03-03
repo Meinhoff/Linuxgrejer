@@ -1,0 +1,18 @@
+
+configuration {
+	display-drun: "Applications:";
+	display-window: "Windows:";
+	drun-display-format: "{icon} {name}";
+	font: "Ubuntu 15";
+	modi: "windows,run,drun";
+	show-icons: true;
+	icon-theme: "Newaita-reborn";
+}
+window {
+	width: 100%;
+}
+element-icon {
+	size: 42;
+}
+@theme "~/.config/rofi/themes/fancy.rasi"
+/* @theme "/dev/null" */
