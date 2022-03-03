@@ -14,8 +14,8 @@ chmod +x $HOME/.config/i3blocks/scripts/*
 echo "exec zsh" >> $HOME/.bash
 cp zshrc $HOME/.zshrc
 mkdir $HOME/Wallpapers
-cp Bergvatten.jpg $HOME/Wallpapers
-nitrogen --set-zoom-fill $HOME/Wallpapers/Bergvatten.jpg
+cp mount1.jpg $HOME/Wallpapers
+nitrogen --set-zoom-fill $HOME/Wallpapers/mount1.jpg
 cd
 rm -rf Linuxgrejer
 sudo reboot now
