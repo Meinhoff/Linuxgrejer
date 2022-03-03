@@ -3,5 +3,6 @@ sudo pacman -Syyu
 sudo reflector --country Sweden  --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 mkdir $HOME/.config/rofi
 mkdir $HOME/.config/rofi/themes
-cp config.rasi $HOME/.config/rasi
-cp fancy.rasi $HOME/.config/rasi/themes
+cp config.rasi $HOME/.config/rofi
+cp fancy.rasi $HOME/.config/rofi/themes
+
