@@ -12,11 +12,9 @@ cp i3blocksconfig $HOME/.config/i3blocks/
 cp config $HOME/.config/i3/
 mv $HOME/.config/i3blocks/i3blocksconfig $HOME/.config/i3blocks/config
 chmod +x $HOME/.config/i3blocks/scripts/*
-echo "exec zsh" >> $HOME/.bash
-cp zshrc $HOME/.zshrc
 mkdir $HOME/Wallpapers
 cp mount1.jpg $HOME/Wallpapers
 nitrogen --set-zoom-fill $HOME/Wallpapers/mount1.jpg
 rm -rf Linuxgrejer
-echo "Klaaaaart"!
+echo "Klaaaaart! Starta om data-apparaturen utifall...."
 
