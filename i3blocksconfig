@@ -1,17 +1,8 @@
-#Restarta i3
-#[restart]
-#align=left
-#color=#ffcc00
-#full_text= 🌀
-#command=i3-msg -q restart
-
 #Volume
 [volume]
 color=#ffcc00
 command=$HOME/.config/i3blocks/scripts/volume
-#LABEL=♪ 
 LABEL= 🔊
-#LABEL=VOL 
 interval=once
 signal=10
 
