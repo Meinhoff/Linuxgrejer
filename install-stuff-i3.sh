@@ -5,7 +5,7 @@ cp /etc/X11/xinit/xinirc ~/.xinitrc
 head -n -5 $HOME/.xinitrc >> xinitrc
 rm $HOME/.xinitrc 
 mv $HOME/xinitrc $HOME/.xinitrc
-echo -e "picom --experimental-backends -b &\nexec i3\n" >> $HOME/.xinitrc
+echo -e "picom --experimental-backends -b &\nexec i3" >> $HOME/.xinitrc
 mkdir $HOME/.config/rofi
 mkdir $HOME/.config/rofi/themes
 cp config.rasi $HOME/.config/rofi
