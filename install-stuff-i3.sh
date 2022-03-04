@@ -19,8 +19,9 @@ mv $HOME/.config/i3blocks/i3blocksconfig $HOME/.config/i3blocks/config
 chmod +x $HOME/.config/i3blocks/scripts/*
 mkdir $HOME/Wallpapers
 cp mount1.jpg $HOME/Wallpapers
-nitrogen --set-zoom-fill $HOME/Wallpapers/mount1.jpg
 rm -rf Linuxgrejer
 echo "neofetch" >> $HOME/.bashrc
-echo "Klaaaaart! Starta om data-apparaturen!"
+sudo pacman -S nvidia nvidia-utils nvidia-settings
+sudo nvidia-xconfig
+echo "Klaaaaart! Boota om data-apparaturen! Logga in med avändaren och skriv startx"
 
