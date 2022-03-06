@@ -1,3 +1,8 @@
+[system-monitor]
+full_text= 📊 
+command=i3-msg -q exec gnome-system-monitor $button
+color=#F79494
+
 #Volume
 [volume]
 color=#ffcc00
