@@ -3,14 +3,6 @@ full_text= 📊
 command=i3-msg -q exec gnome-system-monitor $button
 color=#F79494
 
-#Volume
-[volume]
-color=#ffcc00
-command=$HOME/.config/i3blocks/scripts/volume
-LABEL= 🔊
-interval=once
-signal=10
-
 #Publik IP
 #[public-ip]
 #DEFAULT_COLOR="#aaafff"
@@ -23,11 +15,10 @@ color=#B79200
 full_text= 🎧
 command=i3-msg -q exec pavucontrol $button
 
-#BRAVE
-#[startbravebrowser]
-#color=#ffcc00
-#full_text= 
-#command=i3-msg -q exec brave https://www.google.com $button
+#Nitrogen
+[nitrogen]
+full_text= 🌄 
+command=i3-msg -q exec nitrogen
 
 #Signal
 [signal-desktop]
@@ -40,6 +31,14 @@ command=i3-msg -q exec signal-desktop $button
 color=#ffcc00
 command=i3-msg -q exec nemo
 full_text= 📂
+
+#Volume
+[volume]
+color=#ffcc00
+command=$HOME/.config/i3blocks/scripts/volume
+LABEL= 🔊
+interval=once
+signal=10
 
 #CPU
 [cpu_usage]
